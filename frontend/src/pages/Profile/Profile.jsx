@@ -305,7 +305,7 @@ const Profile = ({ user }) => {
                                 open={open}
                                 onClose={handleClose}
                                 className="dialog_pic"
-                                style={{ height: "100px" }}
+                                style={{ height: "400px" }}
                             >
                                 <div className="header_update_pic">
                                     <DialogTitle className="dialog_title">
