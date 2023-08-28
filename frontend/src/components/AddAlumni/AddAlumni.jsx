@@ -38,7 +38,7 @@ const VerifyUser = ({ user }) => {
         e.preventDefault();
 
         try {
-            const url = "http://localhost:8080/api/users/addAlumni";
+            const url = "https://ctu-alumni.onrender.com/api/users/addAlumni";
             const { data: res } = await axios.post(url, data);
 
             setShowSnackbar(true);
@@ -75,7 +75,7 @@ const VerifyUser = ({ user }) => {
         formData.append("file", file);
 
         axios
-            .post("http://localhost:8080/api/users/excels", formData, {
+            .post("https://ctu-alumni.onrender.com/api/users/excels", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

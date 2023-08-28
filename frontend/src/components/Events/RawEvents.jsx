@@ -35,7 +35,7 @@ const RawEvents = ({ user }) => {
     const [userInfo, setUserInfo] = useState([]);
     useEffect(() => {
         axios
-            .get("http://localhost:8080/api/users/user/" + user)
+            .get("https://ctu-alumni.onrender.com/api/users/user/" + user)
             .then((res) => {
                 setUserInfo(res.data);
                 // ibutang sa user na variable ang data gikan DB
@@ -48,7 +48,7 @@ const RawEvents = ({ user }) => {
     //fetch all raw job nga wala pa na accept sa Admin
     useEffect(() => {
         axios
-            .get("http://localhost:8080/api/events/allRaw")
+            .get("https://ctu-alumni.onrender.com/api/events/allRaw")
             .then((res) => {
                 setEventData(res.data);
                 setLoading(false);

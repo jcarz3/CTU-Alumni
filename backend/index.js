@@ -35,5 +35,5 @@ app.use("/companyId", express.static("companyId"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const port = process.env.PORT || "https://ctu-alumni.onrender.com";
+const port = process.env.PORT || 8080;
 app.listen(port, console.log(`Listening on port ${port}...`));

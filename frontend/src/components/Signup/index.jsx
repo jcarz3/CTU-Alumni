@@ -34,7 +34,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const url = "http://localhost:8080/api/users/register";
+            const url = "https://ctu-alumni.onrender.com/api/users/register";
             const { data: res } = await axios.put(url, data);
 
             setShowSnackbar(true);

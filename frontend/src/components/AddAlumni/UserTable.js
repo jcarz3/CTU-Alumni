@@ -28,7 +28,7 @@ const UserTable = ({ userBuang }) => {
     // para kuha sa usa ka data sa user
     const [userInfo, setUserInfo] = useState([]);
     useEffect(() => {
-        Axios.get("http://localhost:8080/api/users/user/" + userBuang)
+        Axios.get("https://ctu-alumni.onrender.com/api/users/user/" + userBuang)
             .then((res) => {
                 setUserInfo(res.data);
                 // ibutang sa user na variable ang data gikan DB
@@ -40,7 +40,7 @@ const UserTable = ({ userBuang }) => {
 
     // fetch all not active account
     useEffect(() => {
-        Axios.get("http://localhost:8080/api/users/allNotActive").then(
+        Axios.get("https://ctu-alumni.onrender.com/api/users/allNotActive").then(
             (response) => {
                 setUser(response.data);
                 setLoading(false);
@@ -51,7 +51,7 @@ const UserTable = ({ userBuang }) => {
     // activate a single account
     const activateUser = (id) => {
         console.log(id);
-        Axios.put("http://localhost:8080/api/users/activateAlumni", {
+        Axios.put("https://ctu-alumni.onrender.com/api/users/activateAlumni", {
             id: id,
         }).then(() => {
             setUser(user.filter((item) => item._id !== id));
@@ -61,7 +61,7 @@ const UserTable = ({ userBuang }) => {
     };
     // Reject User or delete
     const deleteUser = (id) => {
-        Axios.delete(`http://localhost:8080/api/users/deleteUser/${id}`);
+        Axios.delete(`https://ctu-alumni.onrender.com/api/users/deleteUser/${id}`);
         setUser(user.filter((item) => item._id !== id));
 
         console.log("user ids", id);

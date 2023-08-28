@@ -65,7 +65,7 @@ const EditUser = () => {
         formData.append("profilePic", fileName);
         formData.append("id", id);
         axios
-            .put("http://localhost:8080/api/users/updateProfilePic", formData)
+            .put("https://ctu-alumni.onrender.com/api/users/updateProfilePic", formData)
             .then(() => {
                 setShowSnackbar(true);
                 setTimeout(() => {
@@ -91,7 +91,7 @@ const EditUser = () => {
     // display 1 data
     useEffect(() => {
         axios
-            .get("http://localhost:8080/api/users/user/" + id)
+            .get("https://ctu-alumni.onrender.com/api/users/user/" + id)
             .then((res) => {
                 setUser(res.data);
                 setUserId(res.data._id);
@@ -109,7 +109,7 @@ const EditUser = () => {
         formData.append("profilePic", fileName);
 
         axios
-            .put("http://localhost:8080/api/users/updateUser", {
+            .put("https://ctu-alumni.onrender.com/api/users/updateUser", {
                 id: id,
                 newfirstName: newfirstName,
                 newlastName: newlastName,
@@ -138,7 +138,7 @@ const EditUser = () => {
         const fetchJobs = async () => {
             try {
                 const res = await axios.get(
-                    `http://localhost:8080/api/jobDetails/jobs/${userId}`
+                    `https://ctu-alumni.onrender.com/api/jobDetails/jobs/${userId}`
                 );
                 setJobDetails(res.data);
             } catch (err) {
@@ -178,7 +178,7 @@ const EditUser = () => {
         formDatas.append("companyId", fileNameJob);
         axios
             .put(
-                "http://localhost:8080/api/jobDetails/addJobDetails",
+                "https://ctu-alumni.onrender.com/api/jobDetails/addJobDetails",
                 formDatas
             )
             .then(() => {
@@ -209,7 +209,7 @@ const EditUser = () => {
     //     e.preventDefault();
 
     //     axios
-    //         .put("http://localhost:8080/api/users/addAward", {
+    //         .put("https://ctu-alumni.onrender.com/api/users/addAward", {
     //             id: userInfo._id,
     //             awardName: awardName,
     //             issuer: issuer,
@@ -226,17 +226,7 @@ const EditUser = () => {
     //             console.log(err);
     //         });
     // };
-    // para delete sa award
-    // const handleDeleteAward = (awardId) => {
-    //     axios
-    //         .put(`http://localhost:8080/api/users/deleteAward/${awardId}`, {
-    //             userId: userId,
-    //         })
-    //         .then((res) => {
-    //             setAwards(awards.filter((award) => award._id !== awardId));
-    //         });
-    // };
-
+  
     // para format sa date
     function formatDate(date) {
         const options = { year: "numeric", month: "long", day: "numeric" };
