@@ -6,7 +6,7 @@ import { Link, Route } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import ctu from "../../images/ctu.png";
-import ctuLogo from "../../images/ctuLogo.svg";
+import ctuLogo from "../../images/ctu.png";
 
 const Login = () => {
     const [data, setData] = useState({ email: "", password: "" });

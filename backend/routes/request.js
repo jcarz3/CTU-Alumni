@@ -35,6 +35,7 @@ router.put("/updateDate/:id", async (req, res) => {
             tls: {
                 rejectUnauthorized: false,
             },
+           
         });
 
         // "Monday, January 1, 2021"
@@ -72,7 +73,7 @@ router.put("/updateDate/:id", async (req, res) => {
 
         transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
-                console.log("errors");
+                console.log("errors ang pag sent",error);
             } else {
                 console.log("Email successfully sent");
             }
