@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+    --input-background: #f6f9fb;
+    --active: #e3fcf7;
+}
+.edit_user_container {
+    display: flex;
+    flex: 1;
+    margin: 5;
+    padding: 0;
+    height: 100%;
+    background-color: var(--background);
+    flex-direction: column;
+    overflow: hidden;
+    transition: background-color 0.7s ease-in;
+}
+#dark .edit_user_container {
+    background-color: var(--dark-main-background);
+}
+
+.edit_user_header h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #06491c;
+    margin-top: 40px;
+    margin-left: 28px;
+}
+#dark .edit_user_header h5 {
+    color: var(--active);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px auto;
+    gap: 20px;
+    height: auto;
+}
+.left {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* margin-bottom: 20px; */
+    border-radius: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* background: rgba(255, 255, 255, 0.5); */
+    box-shadow: 0px 3px 3px -2px rgba(58, 55, 55, 0.2),
+        0px 3px 4px 0px rgba(77, 75, 75, 0.14), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    /* backdrop-filter: blur(2px); */
+}
+#dark .left {
+    box-shadow: 1px 13px 26px 1px rgba(68, 64, 64, 0.75);
+    -webkit-box-shadow: 1px 13px 26px 1px rgba(31, 26, 26, 0.75);
+    -moz-box-shadow: 1px 13px 26px 1px rgba(82, 77, 77, 0.75);
+    background-color: var(--dark-background);
+}
+
+.profile_pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    object-position: center;
+}
+.update_img {
+    margin-top: -20px;
+    position: relative;
+    width: 100px;
+    height: 20px;
+}
+.camera_holder {
+    position: absolute;
+    background-color: #e4e6eb;
+    border-radius: 50%;
+    left: 63px;
+    top: -10px;
+    height: 32px;
+    width: 32px;
+}
+#dark .camera_holder {
+    background-color: #3a3b3c;
+}
+.camera {
+    left: 5px;
+    top: 4px;
+    position: absolute;
+    color: rgb(15, 15, 29);
+    font-size: 22px;
+    cursor: pointer;
+}
+#dark .camera {
+    color: #e9eaec;
+}
+.input {
+    display: none;
+}
+.profile_pic img {
+    height: 100px;
+    width: 100px;
+    object-position: center;
+    border-radius: 50%;
+    background-color: rgb(170, 177, 177);
+    border: 3px solid #c5ccdf;
+}
+#dark .profile_pic img {
+    border: 2px solid rgb(245, 235, 235);
+}
+
+.name {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #5b5b5e;
+}
+#dark .name h5 {
+    color: var(--active);
+}
+
+.about_info {
+    flex: 1;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.about_info h1,
+p {
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif "poppins";
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.about_info .p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+#dark .about_info .p {
+    font-weight: 200;
+}
+.fullname {
+    margin-top: 2px;
+    display: flex;
+}
+.fullname h1,
+p {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+/*Right*/
+.edit_user_container .right {
+    position: relative;
+    flex: 1.9;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+    transition: background-color 0.7s ease-in;
+}
+
+.right .top_profile {
+    background-color: white;
+    border-radius: 1px;
+    padding-bottom: 10px;
+    transition: background-color 0.7s ease-in;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    /* backdrop-filter: blur(100px); */
+}
+#dark .right .top_profile {
+    background-color: var(--dark-background);
+}
+.settings {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.settings h1 {
+    color: #016bf8;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.edit_personal_info {
+    display: flex;
+    margin-left: 20px;
+}
+.edit_personal_info h1 {
+    font-size: 16px;
+}
+#dark .edit_personal_info h1 {
+    color: var(--active);
+    font-weight: 500;
+}
+.edit_user_icons {
+    margin-top: 4px;
+    font-size: 16px;
+    margin-right: 8px;
+    color: #00684a;
+}
+#dark .edit_user_icons {
+    color: var(--active);
+    font-size: 18px;
+}
+.personal_info h1 {
+    color: #00684a;
+    font-size: 15px;
+}
+.fname {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+.fname_holder {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 10px;
+}
+
+.fname_holder p,
+.email_holder p,
+.phone_holder p {
+    margin-bottom: 4px;
+}
+.input_fname {
+    border: none;
+    height: 30px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: var(--input-background);
+    transition: background-color 0.7s ease-in;
+}
+#dark .input_fname,
+#dark .bio_area {
+    font-weight: 300;
+    letter-spacing: 0.7px;
+}
+
+.bio {
+    width: 100%;
+    margin: 10px 10px;
+}
+.bio p {
+    margin-bottom: 2px;
+}
+.bio textarea {
+    resize: none;
+    height: 90px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--input-background);
+    transition: background-color 0.7s ease-in;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    background-color: #e9edf0;
+}
+.email_holder,
+.age_holder,
+.phone_holder,
+.course_holder,
+.year_holder {
+    flex: 1;
+    min-width: 280px;
+    margin: 0 10px;
+    margin-bottom: 15px;
+}
+.age_holder,
+.birthdate_holder,
+.gender_holder {
+    flex: 1;
+    min-width: 220px;
+    margin: 0 10px;
+    margin-bottom: 15px;
+}
+.fname p {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+input,
+textarea {
+    padding: 7px;
+}
+
+.status_holder {
+    display: flex;
+    flex-direction: column;
+    min-width: 270px;
+    margin: 0 10px;
+}
+select {
+    padding: 10px;
+    border: none;
+    background-color: var(--input-background);
+    transition: background-color 0.7s ease-in;
+}
+.selectCourse {
+    padding: 5px;
+    height: 30px;
+    min-width: 250px;
+    max-width: 250px;
+    background-color: var(--input-background);
+}
+.selectGender {
+    padding: 5px;
+    height: 30px;
+    min-width: 220px;
+    max-width: 250px;
+}
+
+.button_holder {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    padding: 3px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    margin-right: 15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 3px 1px;
+    width: 85px;
+    background-color: #00684a;
+    transition: background 0.5s;
+}
+
+.button:hover {
+    -webkit-box-shadow: -1px 10px 26px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 26px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 26px -10px rgba(0, 0, 0, 0.75);
+}
+.button_holder p,
+.button_holder .icon {
+    color: white;
+}
+.button_holder .icon {
+    font-size: 13px;
+}
+.button_holder p {
+    margin: 0;
+    padding: 4px;
+}
+
+/*
+	border: 2px solid rgba(255,255,255,0.3);
+	background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+
+
+	border: 2px solid rgba(255,255,255,0.3);
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+	backdrop-filter: blur(2px);
+*/
+
+/* awards section bottom lane */
+.job_profile_section {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+.job_profile_section h1 {
+    font-size: 18px;
+    color: rgb(6, 49, 6);
+}
+.jps_header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.jps_header .icon {
+    padding: 5px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.jps_header .icon:hover {
+    background-color: #c3c5c5;
+}

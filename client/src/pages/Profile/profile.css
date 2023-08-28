@@ -1,0 +1,514 @@
+.profile_container {
+    display: flex;
+    flex: 1;
+    margin: 5;
+    padding: 0;
+    height: 1000px;
+    background-color: var(--background);
+    /* background-image: linear-gradient(#f5f5f5, #d1fad8); */
+    flex-direction: column;
+    overflow: hidden;
+    transition: background-color 0.7s ease-in;
+}
+#dark .profile_container {
+    background-image: none;
+    background-color: var(--dark-main-background);
+}
+
+.profile_header h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #191d33;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+#dark .profile_header h5 {
+    color: var(--gray-h1-p);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px auto;
+    height: auto;
+    transition: background-color 0.7s ease-in;
+}
+.profile_left {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    backdrop-filter: blur(2px);
+    transition: background-color 0.7s ease-in;
+}
+#dark .profile_left {
+    box-shadow: 1px 13px 26px 1px rgba(68, 64, 64, 0.75);
+    -webkit-box-shadow: 1px 13px 26px 1px rgba(31, 26, 26, 0.75);
+    -moz-box-shadow: 1px 13px 26px 1px rgba(82, 77, 77, 0.75);
+    background-color: var(--dark-background);
+}
+
+.profile_pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+}
+.profile_pic img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(170, 177, 177);
+}
+#dark .profile_pic img {
+    background-color: #5f6379;
+    border: 1px solid var(--white);
+}
+
+/* save dialog  */
+.dialog_pic {
+    width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+.header_update_pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.dialog_title {
+    flex: 1;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.dialog_title h5 {
+    margin-left: 30px;
+}
+.header_update_pic .btn_close {
+    flex: 4;
+}
+
+.button_holder_pic {
+    display: flex;
+    justify-content: end;
+    margin: 15px 15px;
+    gap: 9px;
+}
+.btn_cancel_pic {
+    outline: none;
+    border: none;
+    padding: 4px;
+    background-color: white;
+    color: rgb(28, 28, 148);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn_save_pic {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px 15px;
+    background-color: rgb(7, 141, 194);
+    color: white;
+}
+.btn_save_pic:hover {
+    border: 1px solid blue;
+    background-color: #4a58a7;
+}
+
+.name {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    color: #5b5b5e;
+}
+#dark .name {
+    color: var(--light-gray-h1);
+}
+
+.container .profile_about_info {
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    height: auto;
+}
+.profile_about_info h1,
+.profile_about_info p {
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#dark .profile_about_info p {
+    color: var(--white);
+}
+
+#dark .profile_about_info h1 {
+    font-weight: 500;
+    color: var(white);
+}
+.profile_about_info p {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.fullname {
+    margin-top: 2px;
+    display: flex;
+}
+.fullname h1,
+p {
+    margin-right: 5px;
+    font-size: 13px;
+}
+#dark .profile_about_info h1 {
+    font-weight: 600;
+    color: var(--light-violet);
+}
+
+/*Right*/
+.profile_container .right {
+    position: relative;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 8px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 255);
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    backdrop-filter: blur(100px);
+    transition: background-color 0.7s ease-in;
+}
+#dark .right {
+    box-shadow: 1px 13px 26px 1px rgba(68, 64, 64, 0.75);
+    -webkit-box-shadow: 1px 13px 26px 1px rgba(31, 26, 26, 0.75);
+    -moz-box-shadow: 1px 13px 26px 1px rgba(82, 77, 77, 0.75);
+    background-color: var(--dark-background);
+}
+.settings {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.settings h1 {
+    font-weight: 500;
+    margin-left: 20px;
+    font-size: 16px;
+}
+#dark .settings h1 {
+    color: var(--white);
+}
+
+.personal_info {
+    display: flex;
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+}
+#dark .personal_info h1,
+#dark .personal-info_icons {
+    font-weight: 500;
+    color: var(--active);
+}
+
+.personal-info_icons {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.personal_info h1 {
+    font-size: 17px;
+}
+.fname {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+.fname_holder {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 10px;
+}
+
+.fname_holder p,
+.email_holder p,
+.phone_holder p {
+    margin-bottom: 4px;
+}
+
+#dark .fname p {
+    font-weight: normal;
+    color: var(--white);
+}
+#dark .fname input,
+#dark .fname textarea,
+#dark .fname select {
+    color: var(--white);
+    background-color: var(--dark-main-background);
+}
+#dark #date_picker {
+    color: var(--white);
+}
+.input_fname {
+    border: none;
+    height: 30px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #f1f1ef;
+}
+
+.bio {
+    width: 100%;
+    margin: 10px 10px;
+}
+.bio p {
+    margin-bottom: 2px;
+}
+.profile_container .bio_area {
+    resize: none;
+    height: 90px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(221, 217, 217);
+    transition: background-color 0.7s ease-in;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    background-color: #e9edf0;
+    transition: background-color 0.7s ease-in;
+}
+.email_holder,
+.age_holder,
+.phone_holder,
+.course_holder,
+.year_holder {
+    flex: 1;
+    min-width: 280px;
+    margin: 0 10px;
+    margin-bottom: 15px;
+}
+.age_holder,
+.birthdate_holder,
+.gender_holder {
+    flex: 1;
+    min-width: 220px;
+    margin: 0 10px;
+    margin-bottom: 15px;
+}
+.fname p {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.profile_container input,
+.bio textarea {
+    padding: 7px;
+    background-color: rgb(221, 217, 217);
+}
+
+.status_holder {
+    display: flex;
+    flex-direction: column;
+    min-width: 270px;
+    margin: 10px;
+}
+
+.status_holders {
+    display: flex;
+    flex-direction: column;
+    min-width: 270px;
+    margin: 0 10px;
+}
+.status_holders .input_fname {
+    max-width: 270px;
+}
+
+.status_holder select {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #f1f1ef;
+}
+
+/*
+	border: 2px solid rgba(255,255,255,0.3);
+	background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+
+
+	border: 2px solid rgba(255,255,255,0.3);
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+	backdrop-filter: blur(2px);
+*/
+.skills_header {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.skills_header .icon {
+    font-size: 20px;
+    margin-top: 3px;
+    margin-left: 2px;
+}
+/* para dialog sa job details */
+.jps_header {
+    margin-bottom: 0;
+}
+.job_details_dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 550px;
+    height: 100%;
+}
+.id_input_holder {
+    margin-bottom: 30px;
+}
+.job_profile_section_body {
+    transition: background-color 0.7s ease-in;
+}
+.job_profile_section_body h5 {
+    font-size: 15px;
+    color: rgb(81, 54, 124);
+    letter-spacing: 0.5px;
+}
+#dark .job_profile_section {
+    background-color: var(--dark-background);
+}
+#dark .job_profile_section h1 {
+    color: var(--active);
+    font-weight: normal;
+}
+#dark .job_profile_section h5 {
+    color: rgb(247, 244, 244);
+    font-weight: normal;
+}
+#dark .job_profile_section p {
+    color: rgb(218, 214, 214);
+    font-weight: normal;
+}
+.job_profile_section_body {
+    transition: background-color 0.7s ease-in;
+}
+
+#dark .job_profile_section_body {
+    background-color: var(--dark-background);
+}
+.id_input_holder h5,
+.id_input_holder input {
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+.job_profile_section_body a {
+    font-size: 13px;
+    text-decoration: none;
+    background-color: rgb(247, 240, 230);
+    padding: 1px 4px;
+    border-radius: 2px;
+}
+.jobDetails_card a:hover {
+    background-color: #dfdff1;
+    border: 1px solid rgb(148, 148, 148);
+}
+.jobDetails_card {
+    margin: 10px 4px;
+    padding: 5px 2px;
+}
+.jobDetails_card {
+    position: relative;
+}
+.jobDetails_card button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 80px;
+    border: none;
+    padding: 5px;
+    height: 30px;
+    gap: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(250, 249, 249);
+    margin-bottom: 15px;
+}
+.jobDetails_card button:hover {
+    background-color: #dfdff1;
+    border: 1px solid rgb(148, 148, 148);
+}
+
+#dark .jobDetails_card button {
+    background-color: #191d33;
+    border: 1px solid black;
+}
+.jobDetails_card .icon {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+#dark .jobDetails_card .icon {
+    color: white;
+}
+/* AWard details */
+.award_card {
+    position: relative;
+}
+.award_card button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 80px;
+    border: none;
+    padding: 5px;
+    height: 30px;
+    gap: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(250, 249, 249);
+    margin-bottom: 15px;
+}
+.award_card button:hover {
+    background-color: #dfdff1;
+    border: 1px solid rgb(148, 148, 148);
+}
+
+#dark .award_card button {
+    background-color: #191d33;
+    border: 1px solid black;
+}
+.award_card .icon {
+    font-size: 15px;
+    margin-top: 1px;
+    margin-left: 2px;
+}
+#dark .award_card .icon {
+    color: white;
+}

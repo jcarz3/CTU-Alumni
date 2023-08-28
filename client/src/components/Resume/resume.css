@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.resume_container {
+    height: auto;
+    width: 100%;
+}
+.resume_body {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 900px;
+}
+/* .left_resume {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    backdrop-filter: blur(2px);
+    transition: background-color 0.7s ease-in;
+} */
+
+.header_resume h1 {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.resume_left {
+    flex: 1.3;
+    background-color: rgb(238, 252, 238);
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+.resume_img {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.resume_img img {
+    position: absolute;
+    top: 1px;
+    left: 38px;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background-color: rgb(170, 177, 177);
+    border: 3px solid rgb(80, 79, 79);
+}
+.profile_info_container {
+    position: absolute;
+    left: 30px;
+    top: 160px;
+}
+.profile_info_resume {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.icon_fullName {
+    position: absolute;
+    font-size: 14px;
+    top: 5px;
+    color: rgb(13, 80, 13);
+}
+.personal_details_h1 {
+    font-size: 16px;
+    position: absolute;
+    top: 130px;
+    color: rgb(13, 80, 13);
+}
+.profile_info_resume h1 {
+    margin-left: 25px;
+    margin-top: 0.5px;
+    margin-bottom: -5px;
+    font-size: 10px;
+    color: rgb(15, 39, 15);
+}
+.profile_info_resume p {
+    margin-left: 25px;
+    margin-top: 3px;
+    font-size: 11px;
+}
+
+.skills_container {
+    position: absolute;
+    top: 335px;
+    display: flex;
+    flex-direction: column;
+}
+.skills_container h1 {
+    font-size: 16px;
+    color: rgb(9, 48, 9);
+}
+.skills_container p {
+    font-size: 12px;
+    margin: 0.5px;
+    padding: 0;
+}
+.resume_right {
+    flex: 2.7;
+    padding-left: 10px;
+    padding-top: 25px;
+    margin-left: 10px;
+}
+
+.resume_right h1 {
+    font-size: 16px;
+    color: rgb(13, 80, 13);
+}
+.resume_right p {
+    font-size: 12px;
+}
+
+.about_me {
+    margin-bottom: 10px;
+}
+
+.work_experience h1 {
+    margin-bottom: 5px;
+    color: rgb(13, 80, 13);
+}
+
+.work_exp_card {
+    margin-left: 6px;
+}
+.work_exp_card h5 {
+    font-size: 12px;
+    color: rgb(8, 8, 8);
+}
+.resume_body p {
+    color: rgb(77, 80, 79);
+}
+
+.education_card {
+    margin-left: 6px;
+}
+.education h1 {
+    font-size: 15px;
+    color: rgb(9, 48, 9);
+}
+.education_card h5 {
+    color: rgb(46, 45, 45);
+    font-size: 14px;
+}
+.education_card p {
+    font-size: 12px;
+}
+
+.button_pdf {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px 15px;
+    background-color: rgb(7, 141, 194);
+    color: white;
+    margin-bottom: 40px;
+}

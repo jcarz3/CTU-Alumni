@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.login_container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../../images/4873152.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f3f7f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_form_container {
+    position: relative;
+    width: 430px;
+    height: 480px;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.form_container {
+    width: 450px;
+    flex-direction: row;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 55px;
+    margin-right: 50px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header_text h1 {
+    font-size: 15px;
+    color: #021d02;
+}
+.header_text h5 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #045704;
+}
+
+.logo_container img {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.form_container {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form div {
+    margin: 12px 0;
+    position: relative;
+    width: 325px;
+}
+
+form div input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 2px solid green;
+    background: transparent;
+}
+form div input:focus {
+    outline: 1px solid green;
+    background: transparent;
+}
+
+form div label {
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 600;
+    color: green;
+}
+
+form div input:focus ~ label,
+form div input:valid ~ label,
+.form div input:not(:placeholder-shown) ~ label {
+    color: green;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    top: -10px;
+    left: 15px;
+    background-color: #b9edcf;
+    padding: 2px;
+    transition: 0.3s;
+}
+/*
+input:focus {
+    border: 1px solid white;
+    background-color: white;
+    -webkit-box-shadow: -1px 10px 26px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 26px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 26px -10px rgba(0, 0, 0, 0.75);
+}*/
+
+.error_msg {
+    width: 310px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 12px;
+    background-color: #fa0101;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login_container .button_holder {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.login_container .green_btn {
+    margin-left: 230px;
+    border: none;
+    background-color: rgb(10, 143, 10);
+    /* background-color: #b9b6b6; */
+    border: 2px solid white;
+    color: white;
+    margin-top: 8px;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.green_btn h5 {
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+    font-weight: normal;
+}
+
+.green_btn:hover {
+    background-color: rgb(3, 172, 45);
+    color: #012510;
+    border: 2px solid rgb(1, 71, 11);
+
+    -webkit-box-shadow: -1px 10px 26px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 26px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 26px -10px rgba(0, 0, 0, 0.75);
+}
+
+.signup_container {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 52px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.signup_container p {
+    font-size: 13px;
+    margin-right: 5px;
+    color: rgb(4, 100, 4);
+    font-weight: 600;
+}
+
+.signup_link {
+    text-decoration: none;
+}
+
+.signup_link p:hover {
+    color: black;
+}

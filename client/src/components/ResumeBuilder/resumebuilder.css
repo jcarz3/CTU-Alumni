@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.resume_builder {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+#dark .resume_builder {
+    background-color: var(--dark-main-background);
+}
+.resume_builder_body {
+    margin: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_me_section {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    margin: auto;
+    height: 200px;
+    align-items: center;
+}
+.about_me_section h1 {
+    font-size: 18px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+}
+.about_me_section textarea {
+    width: 90%;
+    height: 120px;
+    border-radius: 3px;
+    background-color: var(--background);
+}
+
+/* experience section */
+.experience_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 30px 50px;
+
+    /* border: 1px solid rgb(230, 224, 224); */
+    border-radius: 3px;
+    /* box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%); */
+}
+.experience_section h1 {
+    font-size: 18px;
+}
+.experience_section h5 {
+    font-size: 1px;
+    font-weight: normal;
+}
+.exp_input_holder {
+    width: 700px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    justify-content: space-between;
+}
+
+.exp_input_holder p {
+    margin-bottom: -5px;
+}
+.resume_input_title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 4px 0;
+}
+.resume_input_title input {
+    width: 100%;
+    border: 1px solid rgb(150, 149, 149);
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 13px;
+    background-color: var(--background);
+    background-color: white;
+}
+.resume_input_title input:focus {
+    border: 1px solid gray;
+}
+.resume_input_title h1,
+.resume_input_des h1 {
+    font-weight: normal;
+    font-size: 13.5px;
+}
+.exp_input_holder .resume_input_des {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: var(--background);
+}
+.resume_input_des textarea {
+    height: 100px;
+    border: 1px solid rgb(150, 149, 149);
+    background-color: var(--background);
+    background-color: white;
+}
+.button_resume_holder {
+    margin-left: 580px;
+    display: flex;
+    position: relative;
+    background-color: rgb(238, 236, 236);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+.button_resume_holder .icon {
+    padding: 0;
+    font-size: 15px;
+    position: absolute;
+    top: 4px;
+    left: 1px;
+}
+.button_resume_holder p {
+    margin-left: 30px;
+    margin-top: 6px;
+    padding-right: 6px;
+}
+
+/* education */
+.education_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 20px 50px;
+    /* border: 1px solid rgb(230, 224, 224); */
+    /* border-radius: 3px;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%); */
+}
+
+.education_section h1 {
+    font-size: 18px;
+}
+.education_section .resume_input_title h1,
+.education_section .resume_input_des h1 {
+    font-weight: normal;
+    font-size: 13.5px;
+}
+
+/* skills */
+.skills_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 30px 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    /* box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%); */
+}
+.skills_section h1 {
+    font-size: 18px;
+}
+.skills_input_holder p {
+    margin-bottom: -8px;
+}
+.skills_input_holder {
+    width: 700px;
+    margin: 7px auto;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+
+    /* position: relative; */
+    justify-content: space-between;
+}
+.skills_input_title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.skills_input_title input {
+    width: 100%;
+    border: 1px solid rgb(150, 149, 149);
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 13px;
+    background-color: white;
+}
+
+.skills_input_title h1 {
+    font-size: 13px;
+}
+.skills_section .button_resume_holder {
+    margin-left: 624px;
+}
+/* button */
+.btn_save_pic {
+    margin-left: 800px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px 15px;
+    background-color: rgb(7, 141, 194);
+    color: white;
+    margin-bottom: 70px;
+}
+.btn_save_pic:hover {
+    border: 1px solid blue;
+    background-color: #4a58a7;
+}
+
+#dark .resume_builder h1,
+#dark .resume_builder p,
+#dark .resume_builder h5 {
+    color: white;
+    font-weight: normal;
+}
+
+#dark .resume_builder textarea,
+#dark .resume_builder input {
+    font-weight: normal;
+    background-color: var(--dark-background);
+    background-color: white;
+    color: white;
+}
+
+#dark .exp_input_holder .resume_input_des {
+    background-color: var(--dark-main-background);
+}
+
+#dark .experience_section {
+    box-shadow: 1px 13px 26px 1px rgba(68, 64, 64, 0.75);
+    -webkit-box-shadow: 1px 13px 26px 1px rgba(31, 26, 26, 0.75);
+    -moz-box-shadow: 1px 13px 26px 1px rgba(82, 77, 77, 0.75);
+    background-color: var(--dark-background);
+}
+#dark .experience_section textarea,
+#dark .experience_section input {
+    background-color: var(--dark-main-background);
+}
+
+#dark .skills_section {
+    box-shadow: 1px 13px 26px 1px rgba(68, 64, 64, 0.75);
+    -webkit-box-shadow: 1px 13px 26px 1px rgba(31, 26, 26, 0.75);
+    -moz-box-shadow: 1px 13px 26px 1px rgba(82, 77, 77, 0.75);
+    background-color: var(--dark-background);
+}
+
+#dark .button_resume_holder {
+    background-color: var(--dark-main-background);
+    box-shadow: 1px 13px 26px 1px rgba(68, 64, 64, 0.75);
+    -webkit-box-shadow: 1px 13px 26px 1px rgba(31, 26, 26, 0.75);
+    -moz-box-shadow: 1px 13px 26px 1px rgba(82, 77, 77, 0.75);
+}
+#dark .button_resume_holder .icon {
+    color: white;
+}
+#dark .skills_input_title input {
+    background-color: var(--dark-main-background);
+}
+
+.resume_ready_print {
+    padding: 0 100px;
+}
+#dark .resume_ready_print {
+    background-color: var(--dark-main-background);
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.verify_container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    transition: background-color 0.7s ease-in;
+}
+#dark .verify_container {
+    background-color: var(--dark-main-background);
+}
+.header_verify {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.header_verify h5 {
+    font-size: 18px;
+    font-weight: normal;
+}
+#dark .header_verify h5 {
+    color: var(--active);
+}
+
+.verify_body {
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 22px;
+    height: 670px;
+    transition: background-color 0.7s ease-in;
+}
+
+/* left */
+.verify_body .left_body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 3px;
+    flex: 1;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    backdrop-filter: blur(2px);
+    transition: background-color 0.7s ease-in;
+    /* height: 540px; */
+}
+#dark .verify_body .left_body {
+    background-color: var(--dark-background);
+}
+
+.verify_body .left_body h5 {
+    font-size: 20px;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--green);
+    font-weight: 600;
+}
+#dark .verify_body .left_body h5 {
+    color: var(--active);
+    font-weight: normal;
+}
+
+.formAdd_container {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+}
+.fname_holderss {
+    margin: 12px 35px;
+    width: 225px;
+}
+.fname_holderss .input_fname {
+    background-color: var(--background);
+    padding: 5px;
+    font-size: 13px;
+    font-weight: normal;
+}
+#dark .fname_holderss .input_fname {
+    background-color: var(--dark-main-background);
+    color: white;
+}
+
+.fname_holderss p {
+    margin: 0;
+}
+#dark .fname_holderss p {
+    color: rgb(205, 205, 205);
+    font-weight: normal;
+}
+
+/* button */
+.button_holders {
+    margin: 15px -50px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button_holders .button {
+    display: flex;
+    gap: 4px;
+    padding: 0;
+    border-radius: 5px;
+}
+.button_holders .button .icon {
+    font-size: 15px;
+    margin-top: 6px;
+    color: white;
+}
+.button_holders .button p {
+    padding: 0;
+    margin-top: 6.5px;
+    color: white;
+}
+
+.styles_error {
+    width: 225px;
+    padding: 7px;
+    margin: 0 35px;
+    font-size: 12px;
+    background-color: #fa0101;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeIn 0.3s, fadeOut 0.5s 2.5s;
+}
+/* right division */
+.verify_body .AddUser_table {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    flex: 3;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+        0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    backdrop-filter: blur(2px);
+}
+
+.verify_body .form_container .form_excell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+    padding: 5px;
+    width: 250px;
+    gap: 8px;
+}
+.form_excell input {
+    border: 1px solid rgb(196, 241, 196);
+    width: 210px;
+    border-radius: 3px;
+}
+#dark .form_excell input {
+    color: rgb(228, 226, 226);
+}
+.form_excell button {
+    margin-left: 147px;
+    border-radius: 3px;
+    border: 1px solid rgb(99, 150, 99);
+    background-color: rgb(224, 241, 220);
+    padding: 2px 7px;
+    cursor: pointer;
+}
+#dark .left_body p {
+    color: rgb(236, 232, 232);
+}
