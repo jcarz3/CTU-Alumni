@@ -9,6 +9,7 @@ const jobRoutes = require("./routes/jobs");
 const eventsRoutes = require("./routes/events");
 const requestRoutes = require("./routes/request");
 const jobDetailsRoutes = require("./routes/jobDetails");
+const questionsRoutes = require("./routes/questions");
 const bodyParser = require("body-parser");
 
 // database connectionn
@@ -25,6 +26,7 @@ app.use("/api/jobs", jobRoutes);
 app.use("/api/events", eventsRoutes);
 app.use("/api/requests", requestRoutes);
 app.use("/api/jobDetails", jobDetailsRoutes);
+app.use("/api/questions", questionsRoutes);
 
 //para maka access image nga naa gawas sa SRC folder
 app.use("/uploads", express.static("uploads"));
